@@ -1,0 +1,131 @@
+#! /bin/bash
+
+
+
+# ERROR 1: You probably picked a diffrent answer then you were supposed to, in the input section.
+# EXIT 1: Exits game.
+
+sleep 4
+
+echo "Loading Game Contents..."
+
+sleep 3
+
+echo "Game Contents Loaded, Now starting, please wait"
+
+sleep 2
+
+echo "RPG GAME 2: FREELANDER"
+
+echo "START GAME? (y/n)"
+
+read start
+
+if [[ $start == "y" ]]; then
+        echo "Starting.."
+
+else
+     echo "LOADING EXIT 1"
+     exit 1
+fi
+
+
+sleep 1
+
+echo "TERMS AND CONDITIONS PLEASE READ: PLEASE DO NOT COPY MY GAME AND ADVERTISE IT LIKE ITS YOURS, DO YOU EXECPT? (y/n) "
+read terms
+
+if [[ $terms == "y" ]]; then
+   echo "THANK YOU, NOW STARTING"
+else
+     echo "PLEASE RETHINK YOUR CHOISES. LOADING EXIT 1"
+     exit 1
+fi
+
+
+sleep 3
+
+echo "After defeating Margit, you search the land. And Find 1 way, 1. Head To a Dragon Cave. (1)"
+
+read choise
+
+if [[ $choise == "1" ]]; then
+   
+   echo "When heading to Dragon Cave, you encounter a dragon. To defeat it pick a number 0 to 5."
+else
+        echo "ERROR 1: DISOBEYED CONDITIONAL. LOADING EXIT 1"
+        exit 1
+fi
+
+
+sleep 2
+
+
+read answer
+
+beastone=$(( $RANDOM % 6 ))
+
+if [[ $beastone == $answer ]]; then
+    echo "Nice You defeated him!"
+else
+   echo "Failed. Restarting" 
+   exit 1
+fi
+# B R E A K E R 
+echo "You Progress into the cave.."
+
+sleep 2
+
+echo "Then Bam, A Zombie Comes"
+
+echo "Choose a number 0 to 2"
+
+read zombie
+
+beasttwo=$(( $RANDOM % 3 ))
+
+if [[ $beasttwo == $zombie ]]; then 
+echo "Nice! You defeated the Zombie"
+echo "You progress deeper.."
+else
+echo "You Died. Restarting. Good Luck"
+exit 1
+fi
+
+sleep 2
+echo "After progressing, you find a chest. Open? (no/yes)"
+
+read chest
+
+if [[ $chest == "no" ]]; then
+  echo "Good Choise, the chest had explosives to lure enemys!"
+else 
+  echo "The chest had explosives, you died. TIP: DONT ME GREEDY"
+  exit 1
+fi
+
+echo "You left the cave"
+
+sleep 2
+
+echo "Wait"
+
+sleep 3
+
+echo "WHATS THAT IN THE DISTANCE"
+sleep 1
+echo "Thanks For Playing, Third Game: RPG GAME 3: TRIASSIC"
+
+sleep 4
+
+echo "RPG GAME 2.5: SIGHT OF THE CURIOUS"
+
+sleep 2
+
+echo "thanks for playin :)"
+
+sleep 10
+
+echo "RPG GAME: ENEMY VIEWS"
+exit 1
+fi
