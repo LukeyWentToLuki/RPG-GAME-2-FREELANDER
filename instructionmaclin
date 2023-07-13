@@ -1,0 +1,17 @@
+INSTRUCTIONS MAC AND LINUX
+
+first.
+
+go to terminal
+
+then do nano freelander.sh
+copy freelandercode.txt
+paste it
+CTRL + X, Y, ENTER to save and leave.
+do chmod +x freelander.sh
+then do ./freelander.sh
+
+enjot 
+
+
+:)))
