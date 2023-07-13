@@ -1,0 +1,36 @@
+So playing freelander takes some installation and stuf, so lets get started!
+THESE ARE INSTRUCTIONS FOR WINDOWS
+
+If you havent played RPG GAME 1, you wouldnt know that there are some instructions there. But if you havent here are some instructions.
+
+reqirements:
+1. windows
+2. admin
+
+First, shutdown your pc.
+Turn it on.
+Keep pressin F1 every second (you can see where this is going)
+then welcome to the BIOS (basic input/output system)
+now scroll to your um I forgo. CPU settings I think, And enable Intel Virtulization, or it might just be called Virtulization. (Dont have that option, follow my instrctions,
+First, get a screwdriver, open up your pc, Unscrew the GPU, and then take off the CPU carefully, then clean the thermal paste, then buy a intel processor, 
+then screw the new one on the cpu slot, with thermal paste like a normal human. And done!)
+
+after doing that
+run your command prompt as admin and type the following:
+
+wsl --install
+
+after that get ubuntu from microsoft store.
+
+your going to be using wsl2 but if you want wsl1 do dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+then after everything installed, go to ubuntu, type:
+cd /$HOME/
+then do nano <filename>.sh
+then copy freelander code.
+then CTRL-X + y + ENTER
+then do
+chmod +x ./<filename>.sh
+then do ./<filename>.sh
+and bom you have gam.
+
