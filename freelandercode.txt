@@ -118,7 +118,7 @@ echo "Thanks For Playing, Third Game: RPG GAME 3: TRIASSIC"
 
 sleep 4
 
-echo "RPG GAME 2.5: SIGHT OF THE CURIOUS"
+echo "RPG GAME 2.5: PERMIAN"
 
 sleep 2
 
